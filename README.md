@@ -10,6 +10,7 @@ CalculatorPlus is a simple Python-based calculator that supports basic arithmeti
 
 ## Features
 - Perform basic arithmetic calculations
+- Handles division safely
 - Supports square root calculations
 
 ## Installation
