@@ -37,6 +37,7 @@ python calculator.py
 16 * 4 = 64
 16 / 4 = 4.0
 The square root of 25 = 5.0
+The area of the circle with radius 5 = 78.53981633974483
 ```
 
 ## Code Structure
@@ -61,6 +62,10 @@ class Calculator:
     def square_root(self, x):
         return math.sqrt(x)
 
+class GeometryCalculator:
+    def calculate_circle_area(self, radius):
+        return math.pi * radius ** 2
+
 if __name__ == "__main__":
     calculator = Calculator()
     num1 = 16
@@ -72,6 +77,10 @@ if __name__ == "__main__":
 
     num3 = 25
     print(f"The square root of {num3} = {calculator.square_root(num3)}")
+    
+    geometry_calculator = GeometryCalculator()
+    radius = 5
+    print(f"The area of the circle with radius {radius} = {geometry_calculator.calculate_circle_area(radius)}")
 ```
 
 ## Development Workflow
