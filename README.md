@@ -1,4 +1,4 @@
-# CalculatorPlus
+# CalculatorPlus & Geometry Calculator
 
 ## Overview
 CalculatorPlus is a simple Python-based calculator that supports basic arithmetic operations such as:
@@ -8,10 +8,14 @@ CalculatorPlus is a simple Python-based calculator that supports basic arithmeti
 - Division
 - Square Root Calculation
 
+Additionally, this repository includes a Geometry Calculator that can calculate:
+- Area of a circle
+
 ## Features
 - Perform basic arithmetic calculations
 - Handles division safely
 - Supports square root calculations
+- Calculate the area of a circle
 
 ## Installation
 Clone the repository and navigate to the project directory:
@@ -56,6 +60,18 @@ class Calculator:
 
     def square_root(self, x):
         return math.sqrt(x)
+
+if __name__ == "__main__":
+    calculator = Calculator()
+    num1 = 16
+    num2 = 4
+    print(f"{num1} + {num2} = {calculator.add(num1, num2)}")
+    print(f"{num1} - {num2} = {calculator.subtract(num1, num2)}") 
+    print(f"{num1} * {num2} = {calculator.multiply(num1, num2)}")
+    print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
+
+    num3 = 25
+    print(f"The square root of {num3} = {calculator.square_root(num3)}")
 ```
 
 ## Development Workflow
