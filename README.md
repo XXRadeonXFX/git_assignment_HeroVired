@@ -16,7 +16,7 @@ CalculatorPlus is a simple Python-based calculator that supports basic arithmeti
 ## Installation
 Clone the repository and navigate to the project directory:
 ```bash
-git clone https://github.com/yourusername/git_assignment_HeroVired.git
+git clone https://github.com/XXRadeonXFX/git_assignment_HeroVired.git
 cd git_assignment_HeroVired
 ```
 
