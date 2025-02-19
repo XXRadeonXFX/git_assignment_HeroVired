@@ -9,12 +9,14 @@ CalculatorPlus is a simple Python-based calculator that supports basic arithmeti
 - Square Root Calculation
 
 Additionally, this repository includes a Geometry Calculator that can calculate:
+- Area of a circle
 - Area of a rectangle
 
 ## Features
 - Perform basic arithmetic calculations
 - Handles division safely
 - Supports square root calculations
+- Calculate the area of a circle
 - Calculate the area of a rectangle
 
 ## Installation
@@ -37,6 +39,7 @@ python calculator.py
 16 * 4 = 64
 16 / 4 = 4.0
 The square root of 25 = 5.0
+The area of the circle with radius 5 = 78.53981633974483
 The area of the rectangle with length 10 and width 6 = 60
 ```
 
@@ -63,6 +66,9 @@ class Calculator:
         return math.sqrt(x)
 
 class GeometryCalculator:
+    def calculate_circle_area(self, radius):
+        return math.pi * radius ** 2
+    
     def calculate_rectangle_area(self, length, width):
         return length * width
 
@@ -79,6 +85,9 @@ if __name__ == "__main__":
     print(f"The square root of {num3} = {calculator.square_root(num3)}")
     
     geometry_calculator = GeometryCalculator()
+    radius = 5
+    print(f"The area of the circle with radius {radius} = {geometry_calculator.calculate_circle_area(radius)}")
+    
     length = 10
     width = 6
     print(f"The area of the rectangle with length {length} and width {width} = {geometry_calculator.calculate_rectangle_area(length, width)}")
@@ -96,4 +105,3 @@ Feel free to fork the repository and submit pull requests. Collaborators can be 
 
 ## License
 This project is licensed under the MIT License.
-
